@@ -1,0 +1,5 @@
+<h1>All doses</h1>
+        <% @doses.each do |dose| %>
+            <%= link_to dose.name, dose_path(dose) %>
+        <% end %>
+      <%= link_to "Add a new dose", new_restaurant_path, %>
